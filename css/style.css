@@ -1,3 +1,26 @@
-body {
-    background-color: yellow;
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'pc';
+    src: url('./pc/PyeongChangPeace-Bold.ttf');
+    font-weight: 500;
+
 }
+
+@font-face {
+    font-family: 'pc';
+    src: url('./pc/PyeongChangPeace-Light.ttf');
+    font-weight: 400;
+
+}
+
+* {
+    font-family: 'pc';
+}
+
+
+html {
+    background-color: beige;
+}
+

@@ -2,28 +2,192 @@
 <html lang="ko">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>🍰채채의 일기장</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            padding: 30px;
+        }
+
+        div {
+            margin: auto;
+        }
+
+        .homework {
+            width: 500px;
+            height: 300px;
+            border: 2px solid tomato;
+            overflow: auto;
+            overflow: scroll;
+            overflow: visible;
+            overflow: hidden;
+            overflow-y: scroll;
+            border-radius: 20px;
+        }
+
+        .daily {
+            width: 500px;
+            height: 300px;
+            border: 2px solid tomato;
+            overflow: auto;
+            overflow: scroll;
+            overflow: visible;
+            overflow: hidden;
+            overflow-y: scroll;
+            border-radius: 20px;
+        }
+
+        .memo {
+            width: 500px;
+            height: 300px;
+            border: 2px solid tomato;
+            border-radius: 20px;
+
+            /* overflow: auto;
+            overflow: scroll;
+            overflow: visible;
+            overflow: hidden;
+            overflow-y: scroll; */
+        }
+
+        p {
+            margin: 10px;
+            margin-left: 10px;
+            text-align: center;
+        }
+
+        a {
+            width: 100px;
+            text-align: center;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: rgb(37, 68, 66);
+            color: white;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>git</h1>
-    1. 폴더에서 최초한번 깃 시스템 설치
-    git init
-    🍳2. 수정한 파일의 스크린샷 생성
-    git add .
-    🍳3. 스크린샷을 버전으로 생성
-    git commit -m "커밋메시지"
-    4. 원격저장소 생성(폴더별 최초한번)
-    깃허브로 이동하여 new repository 클릭
-    5.로컬저장소와 원격저장소 연결
-    pc별 최초 한번 사용자 등록 필요
-    git remote add origin 원격저장소주소 (폴더별 1회실행)
-    🍳6. 원격저장소로 코드 전송
-    git branch -M main (폴더별 1회실행)
-    git push origin 브랜치명
+
+    <h1 style="color: cadetblue;">🤍채채의 일기장입니다🤍</h1>
+
+    <h2 style="color: cadetblue;">🍦과제🍦</h2>
+    <div class="homework">
+
+        <p>
+            <a href="./homework/css/0804.html">0804 형성퀴즈1번</a>
+        </p>
+        <p>
+            <a href="./homework/css/quiz0301.html">0803 형성퀴즈1번</a>
+        </p>
+        <p>
+            <a href="./homework/css/quiz01.html">0802 형성퀴즈1번</a>
+        </p>
+        <p>
+            <a href="./homework/css/quiz02.html">0802 형성퀴즈2번</a>
+        </p>
+        <p>
+            <a href="./homework/quiz/05.html">0731 형성퀴즈5번</a>
+        </p>
+        <p>
+            <a href="./homework/quiz/04.html">0731 형성퀴즈4번</a>
+        </p>
+        <p>
+            <a href="./homework/group/group.html">0727 선택자</a>
+        </p>
+        <p>
+            <a href="./homework/table/table.html">0724 이력서만들기</a>
+        </p>
+        <p>
+            <a href="./homework/form/form3.html">0724 form과제3</a>
+        </p>
+        <p>
+            <a href="./homework/form/form2.html">0724 form과제2</a>
+        </p>
+        <p>
+            <a href="./homework/form/form.html">0721 form과제</a>
+        </p>
+        <p>
+            <a href="./homework/table/table2.html">0721 table과제</a>
+        </p>
+        <p>
+            <a href="./homework/usemap/homework.html">0719 usemap과제</a>
+        </p>
+        <p>
+            <a href="./homework/path/web/img/index.html">path 과제</a>
+        </p>
+        <P>
+            <a href="./src/index.html">0714 차은우 불러오기 : 오늘부터 1일</a>
+        </P>
+
+    </div>
+
+    <h2 style="color: cadetblue;">🍦일기장🍦</h2>
+    <div class="daily">
+        <p><a href="./daily/0718.html">7/18</a> </p>
+        <p><a href="./daily/0719.html">7/19</a> </p>
+        <p><a href="./daily/0720.html">7/20</a> </p>
+        <p><a href="./daily/0721.html">7/21</a> </p>
+        <p><a href="./daily/0724.html">7/24</a> </p>
+        <p><a href="./daily/0725.html">7/25</a> </p>
+        <p><a href="./daily/0726.html">7/26</a> </p>
+        <p><a href="./daily/0727.html">7/27</a> </p>
+        <p><a href="./daily/0802.html">8/2</a></p>
+        <p><a href="./daily/0809.html">8/9</a></p>
+        <p><a href="./co6/fi.html">8/11</a></p>
+    </div>
+
+    <h2 style="font-size: 30px;">🧁</h2>
+    <div class="memo">
+
+        <p>
+            <a href="./note/note.html">단축키</a>
+        </p>
+        <p>
+            <a href="./illust/illust.html">일러스트</a>
+        </p>
+        <p>
+            <a href="./photoshop/photoshop.html">포토샵</a>
+        </p>
+    </div>
+
+    <p><a href="#top">위로 이동하기</a></p>
+
 </body>
 
 </html>
