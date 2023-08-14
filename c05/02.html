@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>요소의 안 여백</title>
+    <style type="text/css">
+        body {
+            background: url(../c04/img/bg_grid.png);
+            font: 16px "Malgun Gothic";
+        }
+
+        p {
+            background-color: rgb(243, 209, 224);
+            width: 600px;
+            height: 100px;
+            padding: 50px;
+            /* 한개만 쓰면 4방향 다 적용/ 현재 박스의 너비는 700px */
+            padding: 50px 10px;
+            /* 상하/좌우 대칭으로 적용됨 */
+            padding: 100px 10px 30px;
+            /* 두번째 값이 좌우로 적용됨 100:위 30:아래 10:좌우 */
+            padding: 100px 30px 50px 10px;
+            /* 위에서부터 시계방향으로 적용 */
+            /* ~아래랑 같은 내용~ */
+            padding-top: 100px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>BOX</h3>
+    <p>철수가 영희에게 퍼블리셔란 무슨 일을 하는 직업이니? 하고 물었다.</p>
+    <p>그러자 영희는 철수에게 아~ 그건 다 함께 잘 살기 위해 인터넷 선장이 되는 일이야 라고 말했다.</p>
+</body>
+
+</html>

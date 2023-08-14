@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>POSITION</title>
+    <style>
+        body,
+        div,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 20px;
+            background: url("img/bg_grid.gif");
+        }
+
+        /* absolute, fixed 화면기준
+        absolute->부모요소의 position 속성이 static이 아닐 경우 부모가 기준이 됨 */
+        .box {
+            width: 650px;
+            height: 300px;
+            background: rgba(0, 0, 0, 0.3);
+            position: fixed;
+        }
+
+        p {
+            width: 250px;
+            height: 100px;
+            box-sizing: border-box;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .red {
+            background: crimson;
+        }
+
+        .green {
+            background: lime;
+        }
+
+        .blue {
+            background: dodgerblue;
+        }
+
+        /* position
+        요소를 좌표값을 입력하여 배치하는 속성
+        static , reative , absolute , fixed , sticky
+        기본 , 상대좌표 , 절대좌표 , 고정좌표 , 스티키 */
+        .red {
+            /* 상대좌표는 자기자신을 기준으로(=요소의 현재위치) */
+            position: relative;
+            /* 절대좌표는 절대!안바뀌는 거 -> window가 기준 */
+            position: absolute;
+            top: 100px;
+            left: 250px;
+
+            /* 깊이 : 포지션 선언을 해야지 z-index 사용가능*/
+            /* -1 이후로는 의미없음 */
+            /* z-index: -1; */
+
+        }
+
+        .green {
+            position: relative;
+            /* 파란박스가 같이올라가네? 자리가 비어있어서 그렇대 */
+            position: absolute;
+            left: 20px;
+            top: 0;
+            /* 0 = 값이 없다라는 의미 */
+            z-index: 2;
+        }
+
+        .blue {
+            /* 부모가 사라진다 */
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p class="red">박스의 크기와 위치를 잘 살펴보아야 합니다.</p>
+        <p class="green">박스의 포지션 속성을 바꿔가며 테스트해 보아야 합니다.</p>
+        <p class="blue">포지션을 이해하기 위해서는 시험해보고 관찰해 보는 것이 절대적으로 필요합니다.</p>
+    </div>
+</body>
+
+</html>

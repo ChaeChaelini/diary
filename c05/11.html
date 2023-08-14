@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRANSITION</title>
+    <style>
+        ul {
+            list-style: none;
+
+        }
+
+        li {
+            background-color: rgb(145, 170, 208);
+            padding: 10px;
+            margin: 5px;
+            width: 300px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            transform: scale(1);
+            /* all : 모든속성 
+            속성의 값이 숫자로 변하는 속성값만 인식됨 */
+            transition: all 1s;
+            /* transition-property : 트렌지션 대상 속성 
+             transition-duration : 트렌지션의 지속시간 ms(1/1000) 
+             transition-timing-function : 트렌지션의 가속도 */
+            transition: all 1s cubic-bezier(0.49, 0.08, 0.57, 1.12);
+        }
+
+        ul li a:hover {
+            width: 450px;
+            background-color: brown;
+            color: aqua;
+            transform: scale(1.5);
+            /* transition: all 1s cubic-bezier(0.49, 0.08, 0.57, 1.12); */
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>Moving menu</h3>
+    <ul class="menu">
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Customer Support</a></li>
+        <li><a href="#">Community</a></li>
+    </ul>
+</body>
+
+</html>

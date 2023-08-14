@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cf::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        main {
+            background-color: blue;
+        }
+
+        section {
+            width: 300px;
+            background-color: yellow;
+        }
+
+        /* 이너는 너비+마진 으로 입력해야 화면이 자연스럽게 움직임*/
+        .wrap {
+            width: 500px;
+            /* =max-width */
+
+            margin: auto;
+            background-color: gray;
+        }
+
+        header {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>header</header>
+        <main class="cf">
+            <nav class="fl">nav</nav>
+            <section class="fl">section</section>
+            <aside class="fl">aside</aside>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

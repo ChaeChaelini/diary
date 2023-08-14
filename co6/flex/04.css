@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    height: 150px;
+    width: 100%;
+}
+
+#opt1 {
+    /* align-items 교차축 정렬설정 */
+    align-items: stretch;
+}
+
+#opt2 {
+    /* 교차축 시작점배치 */
+    align-items: flex-start;
+}
+
+#opt3 {
+    /* 교차축 */
+    align-items: flex-end;
+}
+#opt4 {align-items: center;}/*교차축 중앙정렬*/
+#opt4 {align-items: baseline;}/*문자기준선에 맞춰배치*/
+#opt4 {align-items: baseline;}/*교차축 중앙정렬*/
+#opt5 {align-items: center;}/*교차축 중앙정렬*/
+#opt4 {align-items: center;}/*교차축 중앙정렬*/
+

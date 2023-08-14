@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading(선택자 우선순위)</title>
+    <link rel="stylesheet" href="11.css">
+    <style>
+        /* 아이디100 클래스10 태그1 */
+        body#bgPage1.bgPage2 {
+            background-color: pink;
+        }
+
+        body#bgPage1 {
+            background-color: rgb(35, 28, 139);
+        }
+
+        #bgPage1 {
+            background-color: skyblue;
+        }
+
+        .bgPage2 {
+            background-color: gray;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: "맑은 고딕", dotum, "Times New Roman";
+        }
+
+        * {
+            color: red;
+        }
+
+        body * {
+            color: white;
+        }
+
+        /* 작성 순서에 따른 */
+        h1 {
+            color: yellow;
+        }
+
+        /* 선택자 우선순위 적용 */
+        body>h1 {
+            color: red;
+        }
+
+        /* 선택자 우선순위를 적용하여 글씨를 파란색으로 변경 */
+        /* 1 */
+
+        /* !important는 제일우선, 정안될때사용*/
+
+        /* 컬러를 핑크로 */
+        .bgPage2>span.blueText {
+            color: pink;
+        }
+
+        /*1+1+10=12*/
+        p span.blueText {
+            color: pink;
+        }
+
+        /* 11 */
+        p>span {
+            color: blue;
+        }
+
+        /* 11 */
+        span.blueText {
+            color: blue;
+        }
+
+        /* 1+10+1+10=22 */
+        p.bgPage2 span.blueText {
+            color: yellow;
+        }
+    </style>
+    <link rel="stylesheet" href="11.css">
+</head>
+
+<body id="bgPage1" class="bgPage2">
+    <h1>선택자별 우선 순위 알아보기</h1>
+    <hr>
+    <div>
+        <h2>굴 이야기</h2>
+        <p class="bgPage2">
+            일명 <span class="blueText">석화</span>라고도 하는데 멀리서 보면 따낸 굴조개 껍질이 바위면에 하얗게 붙어있어서 마치 <span
+                class="blueText">꽃무더기</span>를 연상하게 한다. 굴은 <span class="blueText">3대 영양소</span>는 물론 비타민, 미네랄에 이르기까지 풍부한
+            영양분을 함유하고 있어서 완전식품인 우유와 별로 다를 바가 없다.
+        </p>
+    </div>
+</body>
+
+</html>

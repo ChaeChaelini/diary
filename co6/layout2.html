@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cf:after {
+            content: '';
+            display: block;
+            clear: both;
+            /* 같은거 overflow : hidden */
+        }
+
+        /* 위에 두가지는 꼭 쓰기! */
+
+        .fl {
+            float: left;
+
+        }
+
+        .fr {
+            float: right;
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        ul {
+            background-color: yellow;
+        }
+
+        .wrap {
+            width: 600px;
+            margin: auto;
+            background-color: blue;
+        }
+
+        nav {
+            background-color: red
+        }
+
+        a {
+            background-color: aqua;
+
+        }
+
+        section {
+            width: 300px;
+            background-color: yellow;
+        }
+
+        aside {
+            background-color: yellow;
+        }
+
+        footer {
+            width: 600px;
+            background-color: green;
+        }
+
+
+        .mx1 {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header class="cf">
+
+            <h1 class="fl">logo</h1>
+
+            <ul class="fr">
+                <li class="fl"><a href="#">test</a></li>
+                <li class="fl"><a href="#">test</a></li>
+                <li class="fl"><a href="#">test</a></li>
+                <li class="fl"><a href="#">test</a></li>
+            </ul>
+
+        </header>
+
+        <main class="ma">
+
+            <nav class="fl">
+                <ul class="cf">
+                    <li class="fl"><a href="#">m1</a></li>
+                    <li class="fl mx1"><a href="#">m1</a></li>
+                    <li class="fl"><a href="#">m1</a></li>
+                </ul>
+            </nav>
+            <section class="fl">section</section>
+            <aside class="fl">aside</aside>
+
+        </main>
+
+        <footer>footer</footer>
+
+    </div>
+
+</body>
+
+</html>

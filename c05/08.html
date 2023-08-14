@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>box-sizing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(../c04/img/bg_grid.png);
+        }
+
+        p {
+            background: rgba(255, 255, 0, .5);
+            border: 10px solid rgba(0, 0, 0, .5);
+            width: 600px;
+            height: 100px;
+            padding: 30px;
+            margin-bottom: 10px;
+        }
+
+        .sizing {
+            /* 알아서 계산해서 박스를 만들어줌 */
+            /* 초기화코드에 적는 경우가 많음 */
+            box-sizing: border-box;
+            /* 컨텐츠 기준으로만 계산해주세요 */
+            box-sizing: content-box;
+        }
+
+        ul.sizing_list {
+            width: 500px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        ul.sizing_list li {
+            list-style: none;
+            width: 25%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            float: left;
+        }
+
+        ul.sizing_list li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* odd 는 홀수순서만 적용된다 */
+        ul.sizing_list li:nth-child(odd) {
+            background: rgba(219, 95, 95, .5);
+        }
+
+        /* even 은 짝수순서만 적용된다 */
+        ul.sizing_list li:nth-child(even) {
+            background: rgba(219, 95, 95, .5);
+        }
+
+        /* 2n, 3n 'n'을 붙이면 순서를 뜻함 (2번째, 3번째)*/
+    </style>
+</head>
+
+<body>
+    <p>It's impossible not only starting good but also keeping it firm!!</p>
+    <p class="sizing">It's impossible not only starting good but also keeping it firm!!</p>
+    <ul class="sizing_list">
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Custommer</a></li>
+        <li><a href="#">Community</a></li>
+    </ul>
+</body>
+
+</html>

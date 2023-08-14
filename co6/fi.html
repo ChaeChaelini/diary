@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피그마</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap {
+            width: 553px;
+            height: 736px;
+            position: relative;
+            margin: auto;
+        }
+
+        .MyGallery {
+            color: #444;
+            font-family: Poppins;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            position: absolute;
+            top: 40px;
+            left: 31px;
+        }
+
+        .chips {
+            width: 56px;
+            height: 27px;
+            background: #E0E0E0;
+            position: absolute;
+            top: 108px;
+            left: 31px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .chips p {
+            margin-top: 3px;
+        }
+
+        .container {
+            width: 490px;
+            height: 381px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            border: 1px solid white;
+            border-radius: 20px;
+            position: absolute;
+            top: 154px;
+            left: 31px;
+
+        }
+
+        .card1 {
+            width: 240px;
+            height: 380px;
+            position: absolute;
+            left: 0px;
+            border-radius: 1.25rem;
+            box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.25);
+            background-image: url(./img/picture.png);
+            background-repeat: no-repeat;
+        }
+
+        .card2 {
+            width: 240px;
+            height: 380px;
+            position: absolute;
+            left: 250px;
+            border-radius: 1.25rem;
+            box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.25);
+            background-image: url(./img/picture2.png);
+            background-repeat: no-repeat;
+        }
+
+        .text1 {
+            width: 65px;
+            height: 24px;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 500;
+            position: absolute;
+            top: 289px;
+            left: 20px;
+        }
+
+        .text2 {
+            width: 200px;
+            height: 47px;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 200;
+            position: absolute;
+            top: 324px;
+            left: 20px;
+            overflow: hidden;
+            color: #7E7E7E;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <p class="MyGallery">My Gallery</p>
+        <div class="chips">
+            <p>#동네</p>
+        </div>
+        <div class="container">
+            <div class="card1">
+                <p class="text1">
+                    Lorem
+                </p>
+                <p class="text2">
+                    Lorem ipsum dolor sit amet consectetur. Ac sit tincidunt volutpat nulla. Praesent convallis
+                    porttitor gravida ut netus felis cursus. Tellus sagittis diam at dictum. Sed convallis accumsan
+                    aliquet egestas lacus et.
+                </p>
+            </div>
+            <div class="card2">
+                <p class="text1">
+                    Lorem
+                </p>
+                <p class="text2">
+                    Lorem ipsum dolor sit amet consectetur. Ac sit tincidunt volutpat nulla. Praesent convallis
+                    porttitor gravida ut netus felis cursus. Tellus sagittis diam at dictum. Sed convallis accumsan
+                    aliquet egestas lacus et.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

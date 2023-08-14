@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* tag selector */
+        p {
+            color: red;
+        }
+
+        /*id selector*/
+        #menu {
+            color: blue;
+        }
+
+        /*class selector*/
+        .junsu {
+            color: green
+        }
+
+        /* asterisk : 전체선택자 */
+        * {
+            /* 초기화코드 */
+            margin: 0px;
+            padding: 0;
+            color: #333;
+            line-height: 1.75;
+            list-style: none;
+        }
+
+        /* 자손 선택자 */
+        ul li {
+            font-size: 24px;
+        }
+
+        body p {
+            background-color: yellow;
+        }
+
+        li h3 {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--태그선택자-->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo hic dolores aliquam quos magni saepe molestias aut
+        aspernatur blanditiis eveniet possimus, quibusdam neque ducimus, recusandae enim, necessitatibus eligendi quis.
+        Aliquam?</p>
+    <!--ul#menu-->
+    <ul id="menu">
+        <li>아이디 선택자</li>
+        <li>아이디는 중복X</li>
+        <li>아이디는 문서에 하나만</li>
+        <li>복습하기</li>
+        <li>과제하기</li>
+    </ul>
+    <!-- .junsu-->
+    <h1 class="junsu">
+        클래스 선택자 /중복사용 O
+    </h1>
+
+    <div>
+        전체선택자 Lorem, ipsum2 dolor sit amet consectetur adipisicing elit. Error vero corporis quibusdam sapiente, a
+        laboriosam
+        corrupti? Necessitatibus mollitia asperiores consequuntur inventore quaerat. Obcaecati molestiae quisquam facere
+        rerum necessitatibus repellendus animi.
+    </div>
+    <hr>
+    <ul>
+        <li>
+            <h3>하위선택자</h3>
+        </li>
+        <li>Lorem ipsum dolor </li>
+        <li>sit amet consectetur</li>
+        <li>adipisicing elit</li>
+    </ul>
+
+</body>
+
+</html>

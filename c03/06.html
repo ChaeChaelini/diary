@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>말줄임 기호</title>
+    <style>
+        /* 밑에 3가지는 초기화 코드라서 무조건!들어간다 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            /* 밑줄은 a 가 가지고 있는 고유의 속성! */
+            text-decoration: none;
+            /* //여기까지// */
+
+            color: darkblue;
+
+            /* a태그에 블럭요소 주기 */
+            display: block;
+            margin: 10px;
+        }
+
+
+        /* 너비, 줄바꿈x, 넘치면숨김, 말줄임표 */
+        .notice a .h3 {
+            width: 200px;
+            border: 1px solid;
+            white-space: nowrap;
+
+            /* 넘치는 컨텐츠에 대한 속성 */
+            /* 스크롤 */
+            overflow: scroll;
+            /* 숨기기 */
+            overflow: hidden;
+
+            /* 말줄임표 */
+            text-overflow: ellipsis;
+        }
+
+        .notice a .multi {
+            width: 200px;
+            border: 1px solid;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="notice">
+        <li><a href="#">
+                <h3 class="h3">시간 배분을 위하여 현명한 판단을 바랍니다. </h3>
+            </a></li>
+        <li><a href="#">
+                <h3>욕심껏 내용을 채우는 것도 좋겠습니다. </h3>
+            </a></li>
+        <li><a href="#">
+                <h3 class="multi">결과물을 볼 수 있어야 하는 것이 우선입니다.결과물을 볼 수 있어야 하는 것이 우선입니다.결과물을 볼 수 있어야 하는 것이 우선입니다.결과물을 볼 수
+                    있어야 하는 것이 우선입니다.결과물을 볼 수 있어야 하는 것이 우선입니다.결과물을 볼 수 있어야 하는 것이 우선입니다.</h3>
+            </a></li>
+    </ul>
+
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중앙정렬</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            /* 알아서 50%를 계산해서 중앙으로 이동? */
+            left: 50%;
+            /* margin-left: -250px; */
+            transform: translateX(-250px);
+        }
+
+        .box1 {
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: calc(100% / 2);
+            /* margin-left: -25px; */
+            top: 50%;
+            /* margin-top: -25px; */
+
+        }
+
+        .container2 {
+            background-color: rgb(43, 0, 255);
+            width: 500px;
+            height: 500px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-250px);
+
+        }
+
+
+        .box {
+            background-color: aqua;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            left: calc(100% / 4);
+            top: 25%;
+        }
+
+        .container3 {
+            background-color: rgb(159, 148, 217);
+            width: 500px;
+            height: 500px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-250px);
+            margin-top: 30px;
+        }
+
+        .right {
+            display: block;
+            height: 200px;
+            background-image: url(./img/3916907.png);
+            background-repeat: no-repeat;
+            width: 200px;
+            position: absolute;
+            left: calc(100% / 2);
+            top: 37%;
+            background-size: 100px;
+            transform: translateX(150px);
+        }
+
+        .left {
+            display: block;
+            height: 200px;
+            background-image: url(./img/3916912.png);
+            background-repeat: no-repeat;
+            width: 200px;
+            position: absolute;
+            top: 37%;
+            background-size: 100px;
+        }
+
+        .container4 {
+            background-color: rgb(26, 200, 154);
+            width: 500px;
+            height: 500px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-250px);
+            margin-top: 30px;
+        }
+
+        .box5 {
+            background-color: brown;
+            width: 50px;
+            height: 30px;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+            position: absolute;
+            left: 43%;
+            top: 45%;
+        }
+
+        .box6 {
+            background-color: brown;
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            margin: 5px;
+            position: absolute;
+            left: -13%;
+            top: -1%;
+        }
+
+        .box7 {
+            background-color: brown;
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            margin: 5px;
+            position: absolute;
+            left: 101%;
+            top: -1%;
+        }
+
+        .box8 {
+            background-color: brown;
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            margin: 5px;
+            position: absolute;
+            left: 45%;
+            top: -9%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+    </div>
+
+    <div class="container2">
+        <div class="box">box</div>
+    </div>
+
+    <div class="container3">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+    <div class="container4">
+        <div class="box5">box5</div>
+        <div class="box6">box6</div>
+        <div class="box7">box7</div>
+        <div class="box8">box8</div>
+    </div>
+
+</body>
+
+</html>

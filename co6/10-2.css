@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: pink;
+}
+
+.inner_wrap {
+    width: 1180px;
+    background-color: green;
+    margin: auto;
+    height: 300px;
+    position: relative;
+}
+
+h1 {
+    /* 부모중 position이 선언된 놈 기준 */
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: palevioletred;
+}
+
+h2 {
+    /* 부모중 position이 선언된 놈 기준 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: palevioletred;
+}

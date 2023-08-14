@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 500px;
+}
+
+body {
+  text-align: center;
+  margin: 5px;
+}
+
+div {
+  border: 1px solid lightgray;
+  margin: 0 auto;
+  width: 500px;
+  padding: 0 0 20px 0;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 15px;
+}
+
+.red {
+  color: red;
+  font-size: 15px;
+}
+
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+
+#black {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-size: 15px;
+}

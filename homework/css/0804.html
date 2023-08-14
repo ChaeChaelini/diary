@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>이미지, 색상, 글자 투명도 조정하기</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            width: 1500px;
+            height: 600px;
+
+            /* 상위 그림부터 작성하기 */
+            background-image: url(../circle.png), url(../bg_gray.png);
+            background-size: 375px 300px, 731px 690px;
+            background-repeat: no-repeat;
+            background-color: #cccccc;
+            background-position: center top, left top;
+            padding-top: 100px;
+        }
+
+        .textBox {
+            border-radius: 20px;
+            width: 90px;
+            background-color: #cccccc;
+            padding: 15px;
+            margin: 10px 0px 0px 700px;
+            font-size: 9px;
+            opacity: 0.7;
+        }
+
+        .people {
+            font-size: 35px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 90px;
+            opacity: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        <a href="../../index.html">🏡</a>
+    </p>
+    <p>형성평가2번</p>
+    <div>
+        <p class="textBox">
+            Freedom is not worth having
+            if it does not include the freedom to make mistakes.
+        </p>
+        <p class="people">- Mahatma Gandhi -
+        <p>
+    </div>
+
+</body>
+
+</html>
