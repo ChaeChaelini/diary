@@ -1,0 +1,39 @@
+.border {
+    width: 1px;
+    height: 1px;
+    border-top: 10px solid black;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid red;
+}
+
+.border_tip {
+    position: relative;
+    left: 50%;
+    width: 400px;
+    background: palevioletred;
+    margin-top: 130px;
+}
+
+
+.border_tip:before {
+    content: '';
+    position: absolute;
+    border-top: 10px solid rgb(156, 7, 56);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.border_tip:after {
+    content: '';
+    position: absolute;
+    border-bottom: 10px solid rgb(156, 7, 56);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -20px;
+}
