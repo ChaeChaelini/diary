@@ -1,0 +1,44 @@
+#wrapper {
+    width: 700px;
+    display: grid;
+    /* grid-template 으로 그리드 라인 생성 */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.box {
+    padding: 15px;
+    color: #fff;
+    font-size: bold;
+    text-align: center;
+}
+
+.box1 {
+    background: aqua;
+    grid-column: 1/4;
+}
+
+.box2 {
+    background: bisque;
+    grid-column: 1/2;
+    grid-column-start: 1;
+    /* 1에서 시작 */
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-row: 2/4;
+}
+
+.box3 {
+    background: yellow;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /* 위에꺼축약하면 */
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.box4 {
+    background: yellowgreen;
+    grid-column: 3/4;
+    grid-row: 3/4;
+}

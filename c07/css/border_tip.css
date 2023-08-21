@@ -33,7 +33,114 @@
     border-bottom: 10px solid rgb(156, 7, 56);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    bottom: -10px;
+    top: -10px;
     left: 50%;
     margin-left: -20px;
 }
+
+.left {
+    content: '';
+    position: absolute;
+    border-right: 10px solid red;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    top: 50%;
+    margin-top: -10px;
+    left: -10px;
+}
+
+.right {
+    content: '';
+    position: absolute;
+    border-left: 10px solid red;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    top: 50%;
+    margin-top: -10px;
+    right: -10px;
+}
+
+/* speech bubble */
+.speech-bubble {
+    width: 300px;
+    background-color: #ebebeb;
+    padding: 80px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.speech-bubble::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    border-right: 40px solid #ebebeb;
+    border-left: 40px solid transparent;
+    bottom: -20px;
+    left: 31px;
+}
+
+.icon {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.heart1 {
+    width: 80px;
+    height: 130px;
+    background-color: rgb(81, 228, 113);
+    transform: rotate(-45deg);
+    position: relative;
+    left: 10px;
+    border-radius: 80px 80px 0 0;
+}
+
+.heart::before {
+    content: '';
+    width: 80px;
+    height: 130px;
+    background-color: rgb(81, 228, 113);
+    transform: rotate(90deg);
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    border-radius: 80px 80px 0 0;
+}
+
+
+
+/* .heart1 {
+    width: 150px;
+    height: 80px;
+background-color: aqua;
+transform: rotate(45deg);
+position: absolute;
+top: 350px;
+left: 44px;
+border-radius: 50% 0 0 50%;}
+
+.heart2 {
+    width: 150px;
+    height: 80px;
+background-color: aqua;
+transform: rotate(139deg);
+position: absolute;
+top: 350px;
+left: 100px;
+border-radius: 50% 0 0 50%;} */
+
+
+
+/* 
+.heart2 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+    transform: rotate(45deg);
+} */
